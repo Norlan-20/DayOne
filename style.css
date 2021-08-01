@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@font-face {
+    font-family: prisma;
+    src: url(./Prisma.ttf);
+}
+
+@font-face {
+    font-family: sans;
+    src: url(./Quicksand_Light.otf);
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(./cat.jpg); */
+    background-color: #ecf0f3;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ********************** */
+/* ********************** */
+/* *******main code****** */
+/* ********************** */
+/* ********************** */
+
+#main {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #cecece69, -10px -10px 8px #cecece69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.old {
+    font-family: prisma;
+    font-size: 10vw;
+    color: green;
+    z-index: 1;
+    position: relative;
+    /* top: -8vw; */
+    animation: downtop 1s linear infinite alternate;
+    animation-iteration-count: 3;
+}
+
+.little {
+    color: rgb(68, 68, 68);
+    font-size: 2vw;
+    font-family: "century gothic";
+    /* top: 40%; */
+}
+
+.rec,.rec1,.rec2 {
+    width: 25vw;
+    height: 25vw;
+    background-color: rgba(255, 0, 0, 0.685);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -11vw;
+    transform: rotate(-120deg);
+}
+
+.rec {
+    left: -11vw;
+}
+
+.rec1 {
+    background-color: yellowgreen;
+    top: -11vw;
+    right: -11vw;
+}
+
+.visite {
+    font-family: sans;
+    position: absolute;
+    bottom: 2vw;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(68, 68, 68);
+    cursor: pointer;
+}
+
+@keyframes downtop{
+    from{transform: scale(0.8)}
+    to{transform: scale(1);}
+}
+
+/* ********************** */
+/* ********************** */
+/* *******all code****** */
+/* ********************** */
+/* ********************** */
+
+/* #all {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+} */
+
+/* ********************** */
+/* ********************** */
+/* ******level code****** */
+/* ********************** */
+/* ********************** */
+
+#level {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.mot {
+    position: absolute;
+    font-family: sans;
+    position: absolute;
+    bottom: 2vw;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(68, 68, 68);
+    cursor: pointer;
+}
+
+#level p {
+    color: #444;
+    font-weight: bold;
+    font-family: sans;
+    width: 18vw;
+    font-size: 1.35vw;
+    position: absolute;
+    opacity: 0;
+}
+
+.l1,.l7 {
+    top: 1vw;
+    left: 1vw;
+    color: rgba(0, 128, 0, 0.705) !important;
+}
+
+.l2,.l8 {
+    top: 3vw;
+    left: 12vw;
+    color: #99cd32df !important;
+}
+
+.l3,.l9 {
+    top: 1vw;
+    left: 25vw;
+    color: #ff0000 !important;
+}
+
+.l4,.l10 {
+    top: 3vw;
+    left: 39vw;
+    color: rgba(0, 128, 0, 0.924) !important;
+}
+
+.l5,.l11 {
+    top: 1vw;
+    left: 50vw;
+    color: #99cd32e5 !important;
+}
+
+.l6,.l12,.l13 {
+    top: 3vw;
+    left: 60vw;
+    color: #ff0000 !important;
+}
+
+#level h1 {
+    font-family: prisma;
+    font-size: 4vw;
+    color: rgb(153, 161, 153);
+    text-shadow: 1px 1px 20px rgb(153, 161, 153);
+    position: relative;
+}
+
+.l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8,.l9,.l10,.l11,.l12,.l13 {
+    animation: topbottom 6s infinite;
+}
+
+.l7 {
+    animation-delay: 2s;
+}
+
+.l2 {
+    animation-delay: 3s;
+    animation-duration: 4s;
+}
+
+.l3 {
+    animation-delay: 1s;
+}
+
+.l4 {
+    animation-delay: 2.5s;
+    animation-duration: 5s;
+}
+
+.l5{
+    animation-delay: 2.5s;
+}
+
+.l6 {
+    animation-delay: 4s;
+    animation-duration: 10s;
+}
+
+.l8,.l11 {
+    animation-delay: 10s;
+}
+
+.l9 {
+    animation-delay: 2.9s;
+    animation-duration: 8s;
+}
+
+.l10 {
+    animation-delay: 0.5;
+    animation-duration: 8s;
+}
+
+.l12 {
+    animation-delay: 10s;
+    animation-duration: 8s;
+}
+
+.l13 {
+    animation-delay: 4s;
+    animation-duration: 7s;
+}
+
+@keyframes topbottom {
+    0%{top: 1vw; opacity: 0}
+    50%{top: 20vw; opacity: 1;}
+    100%{top: 35vw; opacity: 0;}
+}
+
+#last {
+    background-image: url(./patrice_Talon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    justify-content: center;
+}
+
+#last::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    display: flex;
+}
+
+.text {
+    width: 35vw;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(15px);
+    position: absolute;
+    bottom: 2vw;
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    padding: 2vw;
+    font-family: sans;
+}
+
+.back {
+    color: #444;
+    font-family: sans;
+    position: absolute;
+    top: 15px;
+    left: 3vw;
+    z-index: 4;
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #cecece69;
+    box-shadow: 10px 10px 8px #ecf0f3, -10px -10px 8px #ecf0f3;
+}
+
+.back2,.back3 {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a i{
+    color: green;
+}
+
+/* .quote {
+    font-size: 2.5vw;
+    color: #ff0000;
+} */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2vw;
+    font-family: sans;
+    color: #444;
+}
+
+@media all and (max-width:992px) {
+    .old {
+        font-size: 30vw;
+    }
+
+    .little {
+        font-size: 8vw;
+    }
+
+    #level h1 {
+        font-size: 8vw;
+    }
+
+    #level p {
+        width: 30vw;
+        font-size: 3vw;
+    }
+    .text {
+        width: 90%;
+        padding: 3vw;
+    }
+
+}
