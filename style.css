@@ -371,5 +371,9 @@ footer {
     body {
         overflow: hidden;
     }
+    
+    .rec,.rec1,.rec2 {
+        display: none;
+    }
 
 }
