@@ -367,5 +367,9 @@ footer {
         width: 90%;
         padding: 3vw;
     }
+    
+    body {
+        overflow: hidden;
+    }
 
 }
